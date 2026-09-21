@@ -1,0 +1,2 @@
+def isNegative(float):
+    
