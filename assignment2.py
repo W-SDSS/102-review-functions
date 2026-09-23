@@ -1,7 +1,5 @@
 def isHappy(float):
+    return float > 0 and isinstance(float, int)
 
-    
-
-it is a number
-is an integer
-it is positive
+print(isHappy(9))
+print(isHappy(0.98))

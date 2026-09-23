@@ -1,16 +1,10 @@
 def isPythagoreanTriple(a,b,c):
-    if hypotenuse**2 == min**2 + middle**2:
-        return True
+    hypotenuse = max(a, b, c)
+    if hypotenuse == a:
+        return hypotenuse**2 == b**2 + c**2
+    elif hypotenuse == b:
+        return hypotenuse**2 == a**2 + c**2
     else:
-        return False
+        return hypotenuse**2 == a**2 + b**2
 
-
-
-a = float(input("Enter a number1: "))
-b = float(input("Enter a number2: "))
-c = float(input("Enter a number3: "))
-
-numbers = [a, b, c]
-hypotenuse = max(numbers)
-min = min(numbers)
-middle = 
+print(isPythagoreanTriple(3,4,5))
