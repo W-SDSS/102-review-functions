@@ -3,4 +3,3 @@ def isNegative(float):
 
 print(isNegative(9))
 print(isNegative(-9))
-ww
